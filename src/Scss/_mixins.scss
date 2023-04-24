@@ -5,30 +5,28 @@
   font-weight: $fw;
   color: $color;
 }
-// @mixin btn {
-//   display: inline-block;
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 19px;
-//   color: $white;
-//   padding: 13px 18px;
-//   border-radius: 5px;
-//   border: 1px solid $color-primary;
-//   background: $color-primary;
-//   &:active {
-//     animation: scale-down-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both normal;
-//     @keyframes scale-down-center {
-//         0% {
-//           -webkit-transform: scale(1);
-//                   transform: scale(1);
-//         }
-//         100% {
-//           -webkit-transform: scale(0.93);
-//                   transform: scale(0.93);
-//         }
-//       }
-//   }
-// }
+@mixin btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  @include text($ff, 1.8rem, 2.5rem, 600, $color-white);
+  background: $color-btn;
+  border-radius: 4px;
+  padding: 20.5px 48px;
+  &:active {
+    animation: scale-down-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both normal;
+    @keyframes scale-down-center {
+        0% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+        100% {
+          -webkit-transform: scale(0.93);
+                  transform: scale(0.93);
+        }
+      }
+  }
+}
 @mixin flex-between {
   display: flex;
   justify-content: space-between;

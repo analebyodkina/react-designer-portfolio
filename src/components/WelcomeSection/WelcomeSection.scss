@@ -1,0 +1,41 @@
+@import  'src/Scss/vars.scss';
+@import 'src/Scss/mixins.scss';
+
+.main-section {
+    padding-top: 129px;
+    padding-bottom: 153px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;   
+    
+
+    &__info {
+        max-width: 506px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        @include text($ff, 5.4rem, 6.4rem, 700, $color-text);
+        letter-spacing: -0.5px;
+        margin-bottom: 24px;
+    }
+
+    &__desc {
+        @include text($ff, 2rem, 3rem, 600, $color-grey);        
+        letter-spacing: -0.5px;
+        margin-bottom: 88px;
+    }
+
+    &__btn {
+        @include btn; 
+        align-self: flex-start;
+    }
+
+    &__img {
+        margin-right: 10rem;
+        max-width: 400px;
+    }
+}
+.desc {
+}

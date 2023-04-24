@@ -11,7 +11,7 @@ html {
 .wrapper {
     max-width: 1440px;
     margin-inline: auto;
-    background: $color-bg;
+    
 }
 .container {
     max-width: 1270px;
@@ -19,7 +19,8 @@ html {
     margin-inline: auto;
 }
 body {
-    font-family: $ff;    
+    font-family: $ff;
+    background: $color-bg;    
 }
 h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
