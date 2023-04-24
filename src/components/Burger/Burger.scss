@@ -1,0 +1,30 @@
+@import  'src/Scss/vars.scss';
+@import 'src/Scss/mixins.scss';
+.burger {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: -50%;
+    transition: .3s all ease-in-out;
+    transform: translateX(120%);
+    &__content, a {
+        width: 50%;
+        height: 100%;
+        background: grey;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 18px;
+        line-height: 25px;
+        color: #DEDEDE;       
+        
+    }
+
+    &__header {
+    }
+}
+.burger.active {
+    transform: translateX(0);
+}
+

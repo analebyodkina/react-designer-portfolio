@@ -1,7 +1,11 @@
+import React, { useState } from "react";
+import Burger from "../Burger/Burger";
 import LogoIcon from "../Icons/LogoIcon";
 import "./Header.scss";
 
 function Header() {
+  const [burgerActive, setBurgerActive] = useState(false)
+  const items = [{value:"Home", href:'/main'}, {value:"Work", href:'/main'}, {value:"Contact", href:'/main'}, ]
   return (
     <header className="header">
       <div className="container header__container">
@@ -26,15 +30,19 @@ function Header() {
               Contact
             </a>
           </li>
-          {/* <span class="material-symbols-outlined" id="close" onclick="navToggle()">close</span> */}
+          <span class="material-symbols-outlined" id="close" onclick="navToggle()">close</span>
         </ul>
       </nav>
 
       </div>
       
-      {/* <div class="header__burger">
-					 <span class="material-symbols-outlined" onclick="navToggle()">menu</span>
-				</div> */}
+      <div class="header__burger">
+            <span class="material-symbols-outlined" onClick={() => setBurgerActive(!burgerActive)}>
+              menu
+            </span>
+
+					 <Burger active={burgerActive} setActive={setBurgerActive} items={items}/>
+				</div>
     </header>
   );
 }

@@ -17,6 +17,9 @@ html {
     max-width: 1270px;
     padding: 0 15px;
     margin-inline: auto;
+    @include mobile-576 {
+        padding: 0 24px;        
+    }
 }
 body {
     font-family: $ff;
