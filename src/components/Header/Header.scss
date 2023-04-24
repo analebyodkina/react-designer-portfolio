@@ -1,0 +1,49 @@
+
+
+@import  'src/Scss/vars.scss';
+@import 'src/Scss/mixins.scss';
+
+.header {
+    // @include flex-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    background: rgba(50, 50, 50, 0.7);
+backdrop-filter: blur(10px);
+    
+    &__logo {
+        // @include text($ff, 2rem, 2.7rem, 800, $color-text);  
+        font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: -0.5px;
+
+color: #DEDEDE;       
+        letter-spacing: -0.5px;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    &__ul {
+        display: flex;
+        gap: 6rem;        
+    }
+    &__a {
+        // @include text($ff, 1.8rem 2.5rem, 700, $color-text); 
+        letter-spacing: -0.5px;
+        font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+color: #DEDEDE;
+        transition: $transition; 
+        &:hover {
+            color: $color-primary;
+        }         
+    }
+}

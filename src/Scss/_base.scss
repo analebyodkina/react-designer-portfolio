@@ -5,12 +5,16 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+html {
+    font-size: 10px;
+}
 .wrapper {
     max-width: 1440px;
     margin-inline: auto;
+    background: $color-bg;
 }
 .container {
-    max-width: 1200px;
+    max-width: 1270px;
     padding: 0 15px;
     margin-inline: auto;
 }
