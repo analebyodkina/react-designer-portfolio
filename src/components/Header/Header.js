@@ -6,7 +6,7 @@ import "./Header.scss";
 
 function Header() {
   const [burgerActive, setBurgerActive] = useState(false)
-  const items = [{value:"Home", href:'/main'}, {value:"Work", href:'/main'}, {value:"Contact", href:'/main'}, ]
+  const items = [{value:"Home", href:'/'}, {value:"Work", href:'/work'}, {value:"Contact", href:'/'}, ]
   return (
     <header className="header">
       <div className="container header__container">

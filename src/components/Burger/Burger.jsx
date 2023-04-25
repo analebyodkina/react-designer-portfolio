@@ -1,7 +1,7 @@
 import React from "react";
 import "./Burger.scss";
 
-const Burger = ({header, items, active, setActive}) => {
+const Burger = ({ items, active, setActive}) => {
   return (
     <div className={active ? 'burger active' : 'burger'}>      
       <div className="burger__content">
