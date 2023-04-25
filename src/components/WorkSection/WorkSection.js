@@ -1,7 +1,5 @@
 import "./WorkSection.scss";
 
-
-
 function WorkSection() {
   return (
     <> worksection works</>

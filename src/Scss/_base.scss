@@ -10,7 +10,9 @@ html {
 }
 .wrapper {
     max-width: 1440px;
-    margin-inline: auto;    
+    margin-inline: auto; 
+    display: grid; 
+    grid-template-rows: auto 1fr auto;  
     
 }
 .container {
