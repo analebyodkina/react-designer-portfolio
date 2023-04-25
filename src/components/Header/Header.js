@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import Burger from "../Burger/Burger";
 import LogoIcon from "../Icons/LogoIcon";
 import "./Header.scss";
@@ -16,19 +17,25 @@ function Header() {
       <nav>
         <ul className="header__ul" id="headerUl">
           <li>
-            <a href="/" className="header__a">
-              Home
-            </a>
+            <Link to={'/'}><a href="/" className="header__a">
+                Home
+              </a>
+            </Link>          
+            
           </li>
           <li>
-            <a href="/" className="header__a">
+          <Link to={'/work'}><a href="/work" className="header__a">
               Work
             </a>
+            </Link>            
           </li>
+            <Link to={'/'}><a href="/" className="header__a">
+                Contact
+              </a>
+            </Link> 
           <li>
-            <a href="/" className="header__a">
-              Contact
-            </a>
+          
+            
           </li>
           {/* <span class="material-symbols-outlined" id="close" onclick="navToggle()">close</span> */}
         </ul>
