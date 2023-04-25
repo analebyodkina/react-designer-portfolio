@@ -28,3 +28,60 @@
     padding: 16px 22px;
   }
 }
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;    
+  background: rgba(0,0,0,0.9);    
+  transition: .3s all ease-in-out;   
+  overflow: hidden;
+  z-index: 50;    
+  &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+  }
+  &__body {
+      width: 500px;
+      background: $color-white;
+      text-align: center;
+      padding: 80px 50px;
+      position: relative;
+      border-radius: 10px;
+      @include mobile-576 {
+          width: 310px;
+          padding: 3rem;
+    }
+  }
+  &__title {
+      @include text ($ff, 2.6rem, 3rem, 700, $color-primary);
+      margin-bottom: 25px;      
+  }
+  &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+  &__input {
+      border: 0;
+      outline: 0;
+      padding: 15px;
+      background-color: $color-grey;
+      border-radius: 10px;
+      @include text ($ff, 1.6rem, 2rem, 400, $color-primary);
+      &::placeholder {
+        @include text ($ff, 1.6rem, 2rem, 400, $color-primary);
+      }
+  }  
+  &__close {
+      font-size: 20px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+  }
+}

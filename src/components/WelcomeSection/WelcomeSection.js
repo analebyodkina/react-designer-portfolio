@@ -20,7 +20,7 @@ function WelcomeSection() {
         
       </div>
       <div class="main-section__img">
-        <img src={userPhoto} alt="/" />       
+        <img src={userPhoto} alt="designer" />       
       </div>      
       
     </div>
