@@ -1,4 +1,3 @@
-import MailIcon from "../Icons/MailIcon";
 import "./WelcomeSection.scss";
 import userPhoto from '../../Assets/userPhoto.png';
 import Button from "../UI/Button";
@@ -15,12 +14,8 @@ function WelcomeSection() {
           I help businesses and companies reach their goals by designing
           user-centric digital products & interactive experiences.
         </div>
-        <Button />
+        <Button />        
         
-        {/* <a href="/" class="main-section__btn">
-            <MailIcon /> 
-          hi@yourname.com
-        </a> */}
       </div>
       <div class="main-section__img">
         <img src={userPhoto} alt="/" />

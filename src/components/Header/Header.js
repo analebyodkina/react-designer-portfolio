@@ -30,7 +30,7 @@ function Header() {
               Contact
             </a>
           </li>
-          <span class="material-symbols-outlined" id="close" onclick="navToggle()">close</span>
+          {/* <span class="material-symbols-outlined" id="close" onclick="navToggle()">close</span> */}
         </ul>
       </nav>
 
