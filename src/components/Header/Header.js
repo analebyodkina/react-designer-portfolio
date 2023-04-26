@@ -33,8 +33,7 @@ function Header() {
                 Contact
               </a>
             </Link> 
-          <li>
-          
+          <li>         
             
           </li>
           {/* <span class="material-symbols-outlined" id="close" onclick="navToggle()">close</span> */}

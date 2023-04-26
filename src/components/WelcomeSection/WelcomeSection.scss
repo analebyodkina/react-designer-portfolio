@@ -2,8 +2,7 @@
 @import 'src/Scss/mixins.scss';
 
 .main-section {
-    padding-top: 129px;
-    padding-bottom: 153px;
+    padding-top: 129px;    
     display: flex;
     justify-content: space-between;
     gap: 15px;
@@ -13,10 +12,8 @@
         gap: 64px;        
     } 
     @include mobile-576 {
-        padding-top: 72px; 
-        padding-bottom: 128px;         
-    }  
-    
+        padding-top: 72px;                  
+    }      
 
     &__info {
         max-width: 506px;
@@ -46,7 +43,20 @@
             @include text($ff, 1.8rem, 2.6rem, 500, $color-text); 
             margin-bottom: 48px;          
         }
-    } 
+    }
+    &__link  {        
+       display: flex;
+       align-items: center;
+        gap: 32px;
+        @include text($ff, 1.6rem, 1.6rem, 700, $color-text); 
+        text-transform: uppercase;        
+        letter-spacing: 1.5px;
+        opacity: 0.7;
+        margin-top: 153px;
+        @include mobile-576 {             
+            margin-top: 136px;         
+        }
+    }
 
     &__img {
         margin-right: 10rem;
@@ -59,5 +69,4 @@
         }
     }
 }
-.desc {
-}
+

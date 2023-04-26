@@ -3,6 +3,7 @@ import userPhoto from '../../Assets/userPhoto.png';
 import Button from "../UI/Button";
 
 import React from 'react';
+import ArrowIcon from "../Icons/ArrowIcon";
 
 
 function WelcomeSection() {
@@ -16,12 +17,17 @@ function WelcomeSection() {
           I help businesses and companies reach their goals by designing
           user-centric digital products & interactive experiences.
         </div>
-        <Button />        
+        <Button />
+        <a href="/" className="main-section__link">
+        <span> <ArrowIcon /> </span>
+        Featured Work
+        </a>          
         
       </div>
       <div class="main-section__img">
-        <img src={userPhoto} alt="designer" />       
-      </div>      
+        <img src={userPhoto} alt="designer"/>       
+      </div> 
+      
       
     </div>
     

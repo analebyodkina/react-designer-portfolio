@@ -7,10 +7,12 @@
 }
 html {
     font-size: 10px;
+    height: 100%;
 }
 .wrapper {
     max-width: 1440px;
-    margin-inline: auto; 
+    margin-inline: auto;
+    height: 100%; 
     display: grid; 
     grid-template-rows: auto 1fr auto;  
     
@@ -25,7 +27,11 @@ html {
 }
 body {
     font-family: $ff;
-    background: $color-bg;    
+    background: $color-bg;  
+    height: 100%;  
+}
+#root {
+    height: 100%;
 }
 h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
