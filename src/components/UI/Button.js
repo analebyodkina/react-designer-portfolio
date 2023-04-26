@@ -29,10 +29,10 @@ function Button() {
   }
   return (
     <>
-    <a href="/" className="btn" onClick={openModal}>
+    <button className="btn" onClick={openModal}>
         <MailIcon /> 
         hi@yourname.com
-    </a> 
+    </button> 
     <Modal 
         isOpen={modalIsOpen}        
         onRequestClose={closeModal}
