@@ -4,7 +4,8 @@ import WorkImage2 from "../../Assets/work-img2.png";
 import WorkImage3 from "../../Assets/work-img3.png";
 import WorkImage4 from "../../Assets/work-img4.png";
 
-function WorkSection() {
+function WorkSection() {  
+  
   return (
     <div className="work">      			
 			<div className="work__row row container">					
