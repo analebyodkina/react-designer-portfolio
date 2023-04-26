@@ -23,11 +23,10 @@ function Header() {
           <li>
           <Link to={'/work'} className="header__a">Work            
           </Link>            
-          </li>
+          </li>            
+          <li>         
             <Link to={'/'} className="header__a">Contact              
             </Link> 
-          <li>         
-            
           </li>
           {/* <span class="material-symbols-outlined" id="close" onclick="navToggle()">close</span> */}
         </ul>

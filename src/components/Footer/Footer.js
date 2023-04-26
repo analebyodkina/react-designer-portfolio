@@ -10,7 +10,10 @@ function Footer() {
   return (
     <div className="footer">
         <div className="container footer__container">
-            <div className="footer__copyright">Made by<span> Your Name</span> — Copyright 2021</div>
+            <div className="footer__copyright">Made by<span className="footer__span"> Your Name</span> — Copyright 
+            <span> {(new Date().getFullYear())}
+            </span> 
+            </div>
             <nav>
                 <ul className="footer__links">
                     <li><a href="https://www.viber.com/" target="blank"><ViberIcon /></a></li>

@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Header from './components/Header/Header';
-import WorkSection from './components/WorkSection/WorkSection';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
+import Work from './pages/Home/Work';
 
 
 function App() {
@@ -12,10 +12,11 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/work' element={<WorkSection />} />
+        <Route path='/work' element={<Work />} />
+        
       </Routes>  
       <Footer />
-
+      
       
       
       

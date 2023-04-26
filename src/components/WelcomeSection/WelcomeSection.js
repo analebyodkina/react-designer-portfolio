@@ -19,8 +19,8 @@ function WelcomeSection() {
         </div>
         <Button />
         <a href="/" className="main-section__link">
-        <span> <ArrowIcon /> </span>
-        Featured Work
+        <ArrowIcon />
+        <span> Featured Work </span>
         </a>          
         
       </div>

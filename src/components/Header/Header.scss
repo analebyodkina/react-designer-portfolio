@@ -30,11 +30,8 @@
     }
     &__a {
         @include text($ff, 1.8rem, 2.5rem, 700, $color-text); 
-        letter-spacing: -0.5px;        
-        transition: $transition; 
-        &:hover {
-            color: $color-primary;
-        }         
+        letter-spacing: -0.5px;  
+        @include hover-underline; 
     }
     &__burger {
         display: none;

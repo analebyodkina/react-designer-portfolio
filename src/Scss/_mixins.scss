@@ -5,6 +5,21 @@
   font-weight: $fw;
   color: $color;
 }
+@mixin hover-underline {
+  &:after {
+    content: "";
+    background-color: $color-text;
+    transition: $transition;
+    display: block;
+    height: 2px;
+    width: 0%;
+    position: relative;
+    top: 2px;			
+  }
+  &:hover:after, &:focus:after {
+    width: 100%;
+  }         
+}
 @mixin btn {
   display: flex;
   align-items: center;
