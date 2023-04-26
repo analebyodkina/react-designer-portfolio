@@ -17,21 +17,14 @@ function Header() {
       <nav>
         <ul className="header__ul" id="headerUl">
           <li>
-            <Link to={'/'}><a href="/" className="header__a">
-                Home
-              </a>
-            </Link>          
-            
+            <Link to={'/'} className="header__a">Home              
+            </Link> 
           </li>
           <li>
-          <Link to={'/work'}><a href="/work" className="header__a">
-              Work
-            </a>
-            </Link>            
+          <Link to={'/work'} className="header__a">Work            
+          </Link>            
           </li>
-            <Link to={'/'}><a href="/" className="header__a">
-                Contact
-              </a>
+            <Link to={'/'} className="header__a">Contact              
             </Link> 
           <li>         
             
@@ -43,7 +36,7 @@ function Header() {
       </div>
       
       <div class="header__burger">
-            <span class="material-symbols-outlined" onClick={() => setBurgerActive(!burgerActive)}>
+            <span className="material-symbols-outlined" onClick={() => setBurgerActive(!burgerActive)}>
               menu
             </span>
 

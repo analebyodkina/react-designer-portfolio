@@ -6,21 +6,21 @@ import WorkImage4 from "../../Assets/work-img4.png";
 
 function WorkSection() {
   return (
-    <div class="work">      			
-			<div class="work__row row container">					
-          <div class="row-card">
+    <div className="work">      			
+			<div className="work__row row container">					
+          <div className="row-card">
               <img src={WorkImage1} alt="work example" />
               <span>InVersion</span>
 					</div>
-          <div class="row-card">
+          <div className="row-card">
             <img src={WorkImage2} alt="work example" />
             <span>InVersion</span>						
 					</div>
-          <div class="row-card">
+          <div className="row-card">
             <img src={WorkImage3} alt="work example" />	
             <span>InVersion</span>					
 					</div>
-          <div class="row-card">
+          <div className="row-card">
             <img src={WorkImage4} alt="work example" />
             <span>InVersion</span>						
 					</div>

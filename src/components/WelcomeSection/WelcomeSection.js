@@ -8,12 +8,12 @@ import ArrowIcon from "../Icons/ArrowIcon";
 
 function WelcomeSection() {
   return (
-    <div class="main-section container">
-      <div class="main-section__info">
-        <h1 class="main-section__title">
+    <div className="main-section container">
+      <div className="main-section__info">
+        <h1 className="main-section__title">
           Hi, I am Your Name A Product Designer based in City.
         </h1>
-        <div class="desc main-section__desc">
+        <div className="desc main-section__desc">
           I help businesses and companies reach their goals by designing
           user-centric digital products & interactive experiences.
         </div>
@@ -24,7 +24,7 @@ function WelcomeSection() {
         </a>          
         
       </div>
-      <div class="main-section__img">
+      <div className="main-section__img">
         <img src={userPhoto} alt="designer"/>       
       </div> 
       

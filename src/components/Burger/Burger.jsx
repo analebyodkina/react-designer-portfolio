@@ -13,7 +13,7 @@ const Burger = ({ items, active, setActive}) => {
            </li>
             )}
         </ul>
-        <span class="material-symbols-outlined" onClick={() => setActive(false)}>close</span>
+        <span className="material-symbols-outlined" onClick={() => setActive(false)}>close</span>
       </div>
       
     </div>

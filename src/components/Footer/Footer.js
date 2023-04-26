@@ -8,11 +8,11 @@ import "./Footer.scss";
 
 function Footer() {
   return (
-    <div class="footer">
-        <div class="container footer__container">
-            <div class="footer__copyright">Made by<span> Your Name</span> — Copyright 2021</div>
+    <div className="footer">
+        <div className="container footer__container">
+            <div className="footer__copyright">Made by<span> Your Name</span> — Copyright 2021</div>
             <nav>
-                <ul class="footer__links">
+                <ul className="footer__links">
                     <li><a href="https://www.viber.com/" target="blank"><ViberIcon /></a></li>
                     <li><a href="https://dribbble.com/" target="blank"><Dribblecon /></a></li>
                     <li><a href="https://www.linkedin.com/" target="blank"><LinkedinIcon /></a></li>
