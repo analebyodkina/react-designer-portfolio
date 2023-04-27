@@ -47,21 +47,22 @@
     &__link  {        
        display: flex;
        align-items: center;
-       gap: 32px;
-       @include text($ff, 1.6rem, 1.6rem, 700, $color-text); 
-       text-transform: uppercase;        
-       letter-spacing: 1.5px;
-       opacity: 0.7;
+       gap: 32px;       
        margin-top: 153px;
-       span {
-        @include hover-underline;
-       }
-       
+       @include press;                         
+       a {        
+        @include text($ff, 1.6rem, 1.6rem, 700, $color-text); 
+        text-transform: uppercase;        
+        letter-spacing: 1.5px;
+        opacity: 0.7;
+        display: flex;
+        align-items: center;
+        gap: 32px;        
+       }              
        @include mobile-576 {             
            margin-top: 128px;         
-       }
+       }        
     }
-
     &__img {
         margin-right: 10rem;
         max-width: 400px;
@@ -73,4 +74,3 @@
         }
     }
 }
-

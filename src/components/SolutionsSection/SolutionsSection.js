@@ -14,7 +14,7 @@ function SolutionsSection() {
   return (
     <div className="solutions container">				
 			<div className="solutions__row">
-				<div className="solutions__img" data-aos="fade-right" data-aos-duration="1200">
+				<div className="solutions__img" data-aos="fade-right" data-aos-duration="1200" delay="150">
 					<img src={SolutionImg1} alt="example" />
 				</div>
 				<div className="solutions__info">
@@ -23,7 +23,7 @@ function SolutionsSection() {
 				</div>
 			</div>
             <div className="solutions__row">
-				<div className="solutions__img" data-aos="fade-left" data-aos-duration="1200" delay="200">
+				<div className="solutions__img" data-aos="fade-left" data-aos-duration="1200" delay="150">
 					<img src={SolutionImg2} alt="example" />
 				</div>
 				<div className="solutions__info">

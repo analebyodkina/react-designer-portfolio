@@ -2,14 +2,13 @@ import "./ProjectsSection.scss";
 // import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import ProjectImage1 from "../../Assets/projects-img1.png";
 import ProjectImage2 from "../../Assets/projects-img2.png";
 import ProjectImage3 from "../../Assets/projects-img3.png";
 
-import { Pagination, Navigation } from "swiper";
+import { Navigation } from "swiper";
  
 
 export default function ProjectsSection() {
@@ -20,12 +19,9 @@ export default function ProjectsSection() {
         <Swiper         
         spaceBetween={24}
         slidesPerView={3}
-        loop={true} 
-        pagination={{
-          clickable: true,
-        }}
+        loop={true}        
         navigation={false} 
-        modules={[Pagination, Navigation]}     
+        modules={[ Navigation]}     
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
     >

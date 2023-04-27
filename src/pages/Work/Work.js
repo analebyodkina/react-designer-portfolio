@@ -1,3 +1,4 @@
+import ConclusionSection from "../../components/ConclusionSection/ConclusionSection";
 import CovibeSection from "../../components/CovibeSection/CovibeSection";
 import PrototypeSection from "../../components/PrototypeSection/PrototypeSection";
 import SolutionsSection from "../../components/SolutionsSection/SolutionsSection";
@@ -11,6 +12,7 @@ function Work() {
        <CovibeSection />
        <PrototypeSection />
        <SolutionsSection />
+       <ConclusionSection />
         
     </>
     

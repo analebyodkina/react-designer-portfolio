@@ -31,9 +31,11 @@
         }      
     }
     &__a {
+        display: block;
         @include text($ff, 1.8rem, 2.5rem, 700, $color-text); 
         letter-spacing: -0.5px;  
-        @include hover-underline; 
+        @include hover-underline;
+        @include press;
     }
     &__burger {
         display: none;

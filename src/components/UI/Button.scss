@@ -5,29 +5,44 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  cursor: pointer;
+  transition: $transition;
   @include text($ff, 1.8rem, 2.5rem, 600, $color-white);
   background: $color-btn;
   border-radius: 4px;
   padding: 20.5px 48px;
   align-self: flex-start;
-  &:active {
-    animation: scale-down-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both normal;
-    @keyframes scale-down-center {
-        0% {
-          -webkit-transform: scale(1);
-                  transform: scale(1);
-        }
-        100% {
-          -webkit-transform: scale(0.93);
-                  transform: scale(0.93);
-        }
-      }
-  }
+  @include press;  
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
   @include mobile-576 {
     align-self: center;
     padding: 16px 22px;
   }
 }
+#spin {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  left: 70px;
+  top: 20px;
+  transform: rotate(0deg);
+  background: none;
+  position: absolute;
+  transition: $transition;  
+}
+.btn:hover #spin {
+  width: 200%;
+  height: 400%;
+  opacity: 0.8;
+  left: -140px;
+  top: -70px;
+  background: $color-primary;
+  transform: rotate(70deg);
+  z-index: -2;
+}
+
 .modal {
   width: 100%;
   height: 100%;
@@ -37,13 +52,13 @@
   background: rgba(0,0,0,0.9);    
   transition: .3s all ease-in-out;   
   overflow: hidden;
-  z-index: 50;    
+  z-index: 99;    
   &__container {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 100%;
+      height: 100vh;
   }
   &__body {
       width: 500px;
@@ -55,6 +70,7 @@
       @include mobile-576 {
           width: 310px;
           padding: 3rem;
+          z-index: 99;
     }
   }
   &__title {
@@ -64,19 +80,36 @@
   &__form {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 20px;      
   }
   &__input {
       border: 0;
-      outline: 0;
-      padding: 15px;
-      background-color: $color-grey;
+      outline: 1px solid $color-text;
+      padding: 15px;      
       border-radius: 10px;
-      @include text ($ff, 1.6rem, 2rem, 400, $color-primary);
+      @include text ($ff, 1.6rem, 2rem, 400, $color-bg);
       &::placeholder {
-        @include text ($ff, 1.6rem, 2rem, 400, $color-primary);
+        @include text ($ff, 1.6rem, 2rem, 400, $color-grey);
       }
-  }  
+      &:focus {
+        outline: 2px solid $color-primary;
+      }
+  } 
+  &__button {
+    border: 0;
+    outline: 0;
+    align-self: center;
+    @include text($ff, 1.8rem, 2.5rem, 600, $color-white);
+    background: $color-btn;
+    border-radius: 4px;
+    padding: 10.5px 48px;
+    width: 100%;
+    transition: $transition;
+    @include press;
+    &:hover {
+      background: $color-primary;
+    }
+  } 
   &__close {
       font-size: 20px;
       position: absolute;

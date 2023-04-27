@@ -3,17 +3,6 @@ import "./Button.scss";
 import React from 'react';
 import Modal from 'react-modal';
 
-// const customStyles = {
-//   content: {
-//     top: '50%',
-//     left: '50%',
-//     right: 'auto',
-//     bottom: 'auto',
-//     marginRight: '-50%',
-//     transform: 'translate(-50%, -50%)',
-//   },
-// };
-
 Modal.setAppElement('#root');
 
 
@@ -32,6 +21,7 @@ function Button() {
     <button className="btn" onClick={openModal}>
         <MailIcon /> 
         hi@yourname.com
+        <div id="spin"></div>
     </button> 
     <Modal 
         isOpen={modalIsOpen}        
@@ -47,7 +37,7 @@ function Button() {
           <form className="modal__form">
             <input className="modal__input" type="text" placeholder="Enter your name" />
             <input className="modal__input" type="email" placeholder="Enter your email" />
-            <Button />					
+            <button type="submit" className="modal__button">Submit</button>				
           </form>
           <div class="modal__close"  onClick={closeModal}>
             <span class="material-symbols-outlined">close</span>

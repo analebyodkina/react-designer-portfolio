@@ -11,7 +11,8 @@
         @include flex-between;
         gap: 15px;
         @include tablet-small-768{
-            flex-direction: column;            
+            flex-direction: column;
+            gap: 35px;            
         }
     }
     &__copyright {
@@ -20,18 +21,22 @@
     }
     &__span {
         color: #ECECEC;
-    }        
-    
+    } 
     &__links {
         display: flex;
-        gap: 43px;
+        gap: 43px;        
         a {
             @include text ($ff, 16px, 19px, 400, $color-white);
+            @include press;
             transition: $transition; 
             &:hover {
-                color: $color-primary;
-            }           
+                svg {
+                    transform: scale(1.1);
+                }
+                svg path{
+                    fill: $color-primary;                     
+                }
+            }                                
         }
-        
     }
 }

@@ -10,7 +10,7 @@ function Home() {
         <WelcomeSection />
         <WorkSection />
         <ExplorationsSection />
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
         <ContactSection />
     </>
     

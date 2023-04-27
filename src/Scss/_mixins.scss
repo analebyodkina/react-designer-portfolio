@@ -8,7 +8,7 @@
 @mixin hover-underline {
   &:after {
     content: "";
-    background-color: $color-text;
+    background-color: $color-primary;
     transition: $transition;
     display: block;
     height: 2px;
@@ -20,14 +20,7 @@
     width: 100%;
   }         
 }
-@mixin btn {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  @include text($ff, 1.8rem, 2.5rem, 600, $color-white);
-  background: $color-btn;
-  border-radius: 4px;
-  padding: 20.5px 48px;
+@mixin press {  
   &:active {
     animation: scale-down-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both normal;
     @keyframes scale-down-center {
