@@ -2,19 +2,19 @@
 @import 'src/Scss/mixins.scss';
 
 .main-section {
-    padding-top: 129px;    
+    width: 100%;
+    padding-top: 211px;    
     display: flex;
     justify-content: space-between;
     gap: 15px;
     @include tablet-992 {
         flex-direction: column-reverse;
         align-items: center;
-        gap: 64px;        
+        gap: 64px;                
     } 
     @include mobile-576 {
-        padding-top: 72px;                  
-    }      
-
+        padding-top: 154px;                  
+    } 
     &__info {
         max-width: 506px;
         display: flex;
