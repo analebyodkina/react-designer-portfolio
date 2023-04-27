@@ -9,7 +9,7 @@ function PrototypeSection() {
       <div className="prototype__container container">
           <h3 className="page2-title">defining the problem</h3>
           <div className="prototype__desc">Designing a product that helps new startups setup their business in a coworking space with budget constraints.</div>
-          <h3 className="page2-title prototype__problem">launch prototype</h3>
+          <a href="/" className="page2-title prototype__problem">launch prototype</a>
       </div> 
           <div className="prototype__img">
             <img src={OfficeImg} alt="office" />

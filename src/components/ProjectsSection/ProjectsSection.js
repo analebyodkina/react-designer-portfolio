@@ -19,7 +19,7 @@ export default function ProjectsSection() {
         <h2 className="title projects__title">Personal Projects</h2>
         <Swiper         
         spaceBetween={24}
-        slidesPerView={"auto"}
+        slidesPerView={3}
         loop={true} 
         pagination={{
           clickable: true,

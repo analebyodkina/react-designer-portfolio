@@ -52,8 +52,11 @@
   &__problem {
     padding-bottom: 10px;
     display: inline-block;
-    border-bottom: 2px solid $color-grey;
     margin-bottom: 10rem;
+    @include hover-underline;
+    &:after {
+      top: 10px;
+    } 
     @include mobile-576 {      
       margin-bottom: 8rem;
     }
