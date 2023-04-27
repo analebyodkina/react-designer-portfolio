@@ -4,7 +4,9 @@
 .header {    
     background: rgba(50, 50, 50, 0.7);
     backdrop-filter: blur(10px);
-    position: relative;
+    position: absolute;
+    width: 100%;
+    max-width: 1920px;
     &__container {
         @include flex-between;
         padding: 2rem 8px;

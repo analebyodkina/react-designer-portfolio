@@ -3,7 +3,7 @@ import './App.scss';
 import Header from './components/Header/Header';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
-import Work from './pages/Home/Work';
+import Work from './pages/Work/Work';
 
 
 function App() {
