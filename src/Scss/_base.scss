@@ -60,15 +60,12 @@ button {
         
     }
 }
-// .desc {
-//     @include text($ff, 16px, 19px, 400, $color-text);
-//     margin-top: 111px;
-//     margin-bottom: 123px;
-//     margin-inline: auto;
-//     max-width: 837px;
-//     @include tablet-small-768 {        
-//         margin-top: 40px;
-//         margin-bottom: 40px;
-//     }
-// }
+.page2-title {
+    @include text($ff, 1.6rem, 1.6rem, 700, $color-text);    
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.7;    
+    margin-bottom: 12px;  
+    
+}
 
