@@ -49,6 +49,10 @@ export default function ProjectsSection() {
       <SwiperSlide><img src={ProjectImage2} alt="project example" /></SwiperSlide>
       <SwiperSlide><img src={ProjectImage3} alt="project example" /></SwiperSlide>
       <SwiperSlide><img src={ProjectImage2} alt="project example" /></SwiperSlide>
+      <SwiperSlide><img src={ProjectImage3} alt="project example" /></SwiperSlide>
+      <SwiperSlide><img src={ProjectImage3} alt="project example" /></SwiperSlide>
+      <SwiperSlide><img src={ProjectImage3} alt="project example" /></SwiperSlide>
+      <SwiperSlide><img src={ProjectImage3} alt="project example" /></SwiperSlide>
       ...
     </Swiper>
 
