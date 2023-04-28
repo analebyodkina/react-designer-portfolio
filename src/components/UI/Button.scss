@@ -6,6 +6,8 @@
   align-items: center;
   gap: 16px;
   cursor: pointer;
+  border: 0;
+  outline: 0;
   transition: $transition;
   @include text($ff, 1.8rem, 2.5rem, 600, $color-white);
   background: $color-btn;
@@ -52,13 +54,15 @@
   background: rgba(0,0,0,0.9);    
   transition: .3s all ease-in-out;   
   overflow: hidden;
-  z-index: 99;    
+  z-index: 90;    
   &__container {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
       height: 100vh;
+      position: relative;
+      z-index: 98;
   }
   &__body {
       width: 500px;
@@ -66,11 +70,12 @@
       text-align: center;
       padding: 80px 50px;
       position: relative;
+      z-index: 99;
       border-radius: 10px;
       @include mobile-576 {
           width: 310px;
           padding: 3rem;
-          z-index: 99;
+          
     }
   }
   &__title {

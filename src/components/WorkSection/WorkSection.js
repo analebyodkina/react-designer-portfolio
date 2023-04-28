@@ -7,9 +7,9 @@ import WorkImage4 from "../../Assets/work-img4.png";
 function WorkSection() {  
   
   return (
-    <div className="work"> 
+    <div className="work container"> 
     <a name="down"></a>	     			
-			<div className="work__row row container">
+			<div className="work__row row">
       					
           <div className="row-card">
               <img src={WorkImage1} alt="work example" />

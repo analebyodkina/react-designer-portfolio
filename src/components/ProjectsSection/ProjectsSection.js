@@ -9,6 +9,7 @@ import ProjectImage2 from "../../Assets/projects-img2.png";
 import ProjectImage3 from "../../Assets/projects-img3.png";
 
 import { Navigation } from "swiper";
+
  
 
 export default function ProjectsSection() {
@@ -20,10 +21,22 @@ export default function ProjectsSection() {
         spaceBetween={24}
         slidesPerView={3}
         loop={true}        
-        navigation={false} 
+        navigation={false}
+        breakpoints={{
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          
+        }}
         modules={[ Navigation]}     
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
+        
     >
       <SwiperSlide><img src={ProjectImage1} alt="project example" /></SwiperSlide>
       <SwiperSlide><img src={ProjectImage2} alt="project example" /></SwiperSlide>
