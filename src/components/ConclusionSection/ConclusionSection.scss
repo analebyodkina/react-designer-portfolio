@@ -16,8 +16,12 @@
         }
     }
     &__img {
+        img { 
+        @include tablet-992 {
+            height: 577px;
+        }
+        }
     }
-
     &__link {
         display: flex;
         margin-top: 224px;

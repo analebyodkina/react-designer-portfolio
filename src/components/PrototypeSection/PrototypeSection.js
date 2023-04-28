@@ -11,7 +11,7 @@ function PrototypeSection() {
           <div className="prototype__desc">Designing a product that helps new startups setup their business in a coworking space with budget constraints.</div>
           <a href="/" className="page2-title prototype__problem">launch prototype</a>
       </div> 
-          <div className="prototype__img">
+          <div className="prototype__img" data-aos="fade-up" data-aos-duration="1500" >
             <img src={OfficeImg} alt="office" />
           </div>
     </div>  
