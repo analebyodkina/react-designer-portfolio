@@ -5,8 +5,7 @@ import "./CovibeSection.scss";
 function CovibeSection() {  
   
   return (
-    <div className="covibe container">
-      
+    <div className="covibe container">  
         
           <h3 className="page2-title">Covibe</h3>
           <div className="covibe__desc">Co-working spaces for tech startups</div>

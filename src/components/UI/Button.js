@@ -25,8 +25,7 @@ function Button() {
     </button> 
     <Modal 
         isOpen={modalIsOpen}        
-        onRequestClose={closeModal}
-        // style={customStyles}
+        onRequestClose={closeModal}        
         contentLabel="Example Modal"
         className="Modal"  
     >        
@@ -39,8 +38,8 @@ function Button() {
             <input className="modal__input" type="email" placeholder="Enter your email" />
             <button type="submit" className="modal__button">Submit</button>				
           </form>
-          <div class="modal__close"  onClick={closeModal}>
-            <span class="material-symbols-outlined">close</span>
+          <div className="modal__close" onClick={closeModal}>
+            <span className="material-symbols-outlined">close</span>
           </div>
         </div>
       </div>

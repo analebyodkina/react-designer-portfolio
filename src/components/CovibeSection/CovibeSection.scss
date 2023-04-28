@@ -1,7 +1,9 @@
 @import  'src/Scss/vars.scss';
 @import 'src/Scss/mixins.scss';
 
-.covibe {    
+.covibe {  
+    position: relative;  
+    z-index: -1;
     padding-top: 12.8rem;
     padding-bottom: 29rem;
     @include mobile-576 {

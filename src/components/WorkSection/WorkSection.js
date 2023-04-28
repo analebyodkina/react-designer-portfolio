@@ -8,7 +8,7 @@ function WorkSection() {
   
   return (
     <div className="work container"> 
-    <a name="down"></a>	     			
+    {/* <a name="down"></a>	     			 */}
 			<div className="work__row row">
       					
           <div className="row-card">

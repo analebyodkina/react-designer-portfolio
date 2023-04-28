@@ -1,8 +1,11 @@
+
 import "./ProjectsSection.scss";
-// import React, { useRef, useState } from "react";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/navigation";
+import 'swiper/css/pagination';
+
 
 import ProjectImage1 from "../../Assets/projects-img1.png";
 import ProjectImage2 from "../../Assets/projects-img2.png";
@@ -31,6 +34,10 @@ export default function ProjectsSection() {
             slidesPerView: 2,
             spaceBetween: 10,
           },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          }
           
         }}
         modules={[ Navigation]}     
