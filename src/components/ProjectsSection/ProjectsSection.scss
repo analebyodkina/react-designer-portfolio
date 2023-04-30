@@ -4,6 +4,9 @@
 
 .projects {
     margin-bottom: 24rem;
+    @include tablet-992 {
+        display: none;
+    }
     @include mobile-576 {
         margin-bottom: 20rem;
     }

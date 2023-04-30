@@ -9,14 +9,15 @@ html {
     font-size: 10px;
     height: 100%;
 }
+.overflow-y-hidden {
+	overflow-y: hidden;
+}
 .wrapper {
     max-width: 1920px;
     margin-inline: auto;
     height: 100%; 
     display: grid; 
-    grid-template-rows: auto 1fr auto; 
-    
-    
+    grid-template-rows: auto 1fr auto;
 }
 .container {
     max-width: 1270px;

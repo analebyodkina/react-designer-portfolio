@@ -7,14 +7,19 @@ function Header() {
   
   const [active, setActive] = useState(false);
   const location = useLocation();
+  
 
   function navToggle() {
     setActive(!active);
-  }
+    var html = document.getElementById("html");
+	  html.classList.toggle("overflow-y-hidden")    
+  }  
 
   useEffect(() => {
     var links = document.getElementById('headerUl');
+    var html = document.getElementById("html");
     links.classList.remove("active");
+    html.classList.remove("overflow-y-hidden")     
   }, [location]);
 
   return (
@@ -39,7 +44,7 @@ function Header() {
                 <Link to={'/'} className="header__a">Contact              
                 </Link> 
               </li>
-              <span className="material-symbols-outlined icon-close" id="close" onClick={navToggle}>close</span>
+              <span className="material-symbols-outlined icon-close" id="close" onClick={navToggle} >close</span>
             </ul>
           </nav>
 
