@@ -1,16 +1,16 @@
 import ContactSection from "../../components/ContactSection/ContactSection";
-// import ExplorationsSection from "../../components/ExplorationsSection/ExplorationsSection";
+import ExplorationsSection from "../../components/ExplorationsSection/ExplorationsSection";
 // import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import WelcomeSection from "../../components/WelcomeSection/WelcomeSection";
-// import WorkSection from "../../components/WorkSection/WorkSection";
+import WorkSection from "../../components/WorkSection/WorkSection";
 
 function Home() {
   return (
     <>
         <WelcomeSection />
-        {/* <WorkSection />
+        <WorkSection />
         <ExplorationsSection />
-        <ProjectsSection /> */}
+        {/* <ProjectsSection /> */}
         <ContactSection />
     </>
     

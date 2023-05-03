@@ -20,7 +20,8 @@ function WelcomeSection() {
             </div>
             <Button />
             <div className="welcome-section__link">
-                <a href="/"><span><ArrowIcon /></span>Featured Work
+                <a href="/"><span><ArrowIcon /></span>
+                <span>Featured Work</span>                
                 </a>
             </div>
                       

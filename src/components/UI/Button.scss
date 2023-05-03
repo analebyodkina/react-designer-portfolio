@@ -8,43 +8,22 @@
   cursor: pointer;
   border: 0;
   outline: 0;
-  transition: .3s all ease-in-out;
+  transition: $transition;
   @include text($ff, 1.8rem, 2.5rem, 600, $color-white);
   background: $color-btn;
   border-radius: 4px;
   padding: 20.5px 48px;
   align-self: flex-start;
-  @include press;  
-  position: relative;
-  overflow: hidden;
-  z-index: 5;
+  @include press;
+  &:hover {
+    background: $color-primary;
+  }    
+  
   @include mobile-576 {
     align-self: center;
     padding: 16px 22px;
   }
 }
-#spin {
-  width: 0;
-  height: 0;
-  opacity: 0;
-  left: 70px;
-  top: 20px;
-  transform: rotate(90deg);
-  background: none;
-  position: absolute;
-  transition: $transition;  
-}
-.btn:hover #spin {
-  width: 200%;
-  height: 400%;
-  opacity: 0.8;
-  left: -140px;
-  top: -70px;
-  background: $color-primary;
-  transform: rotate(70deg);
-  z-index: -2;
-}
-
 .modal {     
   &__container {
       display: flex;
@@ -111,6 +90,3 @@
       cursor: pointer;
   }
 }
-
-
- 

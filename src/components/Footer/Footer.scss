@@ -24,10 +24,13 @@
     } 
     &__links {
         display: flex;
-        gap: 43px;        
-        a {
-            @include text ($ff, 16px, 19px, 400, $color-white);
+        gap: 43px;
+        svg {
             @include press;
+            transition: $transition; 
+        }        
+        a {
+            @include text ($ff, 16px, 19px, 400, $color-white);           
             transition: $transition; 
             &:hover {
                 svg {
