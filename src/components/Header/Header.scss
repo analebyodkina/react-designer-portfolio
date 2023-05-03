@@ -41,7 +41,7 @@
 			transition: $transition;
 			transform: translateX(-120%);
             &.active {
-                transform: translateX(0);                
+                transform: translateX(0);
             }
             .icon-close {
                 display: inline-block;
@@ -68,8 +68,3 @@
         }
     }
 }
-// .header__ul.active {
-//     .body {
-//         overflow: hidden;
-//     }
-// }

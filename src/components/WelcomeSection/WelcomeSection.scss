@@ -1,20 +1,23 @@
 @import  'src/Scss/vars.scss';
 @import 'src/Scss/mixins.scss';
 
-.main-section {
-    width: 100%;
-    padding-top: 211px;    
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    @include tablet-992 {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 64px;                
-    } 
-    @include mobile-576 {
-        padding-top: 154px;                  
-    } 
+.welcome-section {
+    &__row {
+        max-width: 1142px;    
+        width: 100%;
+        padding-top: 211px;    
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        @include tablet-992 {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 64px;                
+        } 
+        @include mobile-576 {
+            padding-top: 154px;                  
+        } 
+    }    
     &__info {
         max-width: 506px;
         display: flex;
@@ -24,7 +27,6 @@
             max-width: 366px;         
         }
     }
-
     &__title {
         @include text($ff, 5.4rem, 6.4rem, 700, $color-text);
         letter-spacing: -0.5px;
@@ -34,7 +36,6 @@
             margin-bottom: 20px;          
         }
     }
-
     &__desc {
         @include text($ff, 2rem, 3rem, 600, $color-grey);        
         letter-spacing: -0.5px;
