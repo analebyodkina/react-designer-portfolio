@@ -16,7 +16,7 @@ function SolutionsSection() {
 				</div>
 			</div>
             <div className="solutions__row">
-				<div className="solutions__img" data-aos="zoom-in" data-aos-duration="1200" delay="150">
+				<div className="solutions__img" data-aos="zoom-in" data-aos-duration="1200" delay="200">
 					<img src={SolutionImg2} alt="example" />
 				</div>
 				<div className="solutions__info">
