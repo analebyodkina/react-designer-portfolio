@@ -1,8 +1,6 @@
 import "./CovibeSection.scss";
 
-
-
-function CovibeSection() {  
+export default function CovibeSection() {  
   
   return (
     <div className="covibe container">  
@@ -29,10 +27,6 @@ function CovibeSection() {
           </div>
 
     </div>
-      
-    
     
   );
 }
-
-export default CovibeSection;

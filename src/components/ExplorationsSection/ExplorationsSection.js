@@ -12,10 +12,9 @@ import ExploreImage6 from "../../Assets/explore-img6.png";
 export default function ExplorationsSection() {
    
     return (
-        <div class="explore container">
-            <h2 className="title explore__title">Visual Explorations</h2>     			
-			
-                <div className="explore__row">					
+        <div className="explore container">
+            <h2 className="title explore__title">Visual Explorations</h2>
+            <div className="explore__row">					
                     <div className="row-card" data-aos="flip-right" data-aos-duration="1200">
                         <img src={ExploreImage1} alt="work example" />                    
                     </div>
@@ -34,9 +33,7 @@ export default function ExplorationsSection() {
                     <div className="row-card" data-aos="flip-left" data-aos-duration="1200">
                         <img src={ExploreImage6} alt="work example" />                    
                     </div>
-                </div>  
-        
-    </div>
-      
+            </div>         
+        </div>      
     );
   }
