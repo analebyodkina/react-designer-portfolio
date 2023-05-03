@@ -7,18 +7,24 @@ function Header() {
   
   const [active, setActive] = useState(false);
   const location = useLocation();
+  
 
   function navToggle() {
     setActive(!active);
     var html = document.getElementById("html");
-	  html.classList.toggle("overflow-y-hidden")    
-  }
-  
+	  html.classList.toggle("overflow-y-hidden")
+    var body = document.getElementById("body");
+	  body.classList.toggle("overflow-y-hidden")    
+  }  
 
   useEffect(() => {
     setActive(false);
     var links = document.getElementById('headerUl');
-    links.classList.remove("active");    
+    var html = document.getElementById("html");
+    var body = document.getElementById("body");
+    links.classList.remove("active");
+    html.classList.remove("overflow-y-hidden")  
+    body.classList.remove("overflow-y-hidden")  
   }, [location]);
 
   return (
